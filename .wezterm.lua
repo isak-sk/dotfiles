@@ -9,7 +9,7 @@ config.window_background_opacity = 0.92
 
 -- Borders and UI
 -- Pop!_OS handles tiling, so we want WezTerm to show its own borders 
--- or stay clean depending on your preference.
+-- or stay clean depending on  preference.
 config.window_padding = { left = 8, right = 8, top = 8, bottom = 8 }
 config.window_decorations = "RESIZE" -- Keeps the resizing border
 
