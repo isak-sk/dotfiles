@@ -2,16 +2,10 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 -- Appearance
-config.color_scheme = 'Tokyo Night' -- Very clean, high contrast
+config.color_scheme = 'darkmoss (base16)'
 config.font = wezterm.font('JetBrainsMono Nerd Font')
-config.font_size = 11.0
-config.window_background_opacity = 0.92
-
--- Borders and UI
--- Pop!_OS handles tiling, so we want WezTerm to show its own borders 
--- or stay clean depending on  preference.
-config.window_padding = { left = 8, right = 8, top = 8, bottom = 8 }
-config.window_decorations = "RESIZE" -- Keeps the resizing border
+config.font_size = 12.0
+config.window_background_opacity = 1
 
 -- Shortcuts (Linux Style)
 config.keys = {
