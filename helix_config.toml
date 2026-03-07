@@ -1,0 +1,38 @@
+theme = "seoul256-dark-hard"
+
+
+[editor]
+line-number = "relative"
+mouse = false
+continue-comments = false
+auto-pairs = true
+end-of-line-diagnostics = "hint"
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
+
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+character = "▏"
+skip-levels = 1
+
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
