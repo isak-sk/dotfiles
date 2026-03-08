@@ -17,3 +17,4 @@ Presenterm			Create and show slideshow presentations entirely in the terminal.
 
 Done:
 Wiki-tui			Read Wikipedia inside your terminal.
+starship			Cross shell customizable prompt
