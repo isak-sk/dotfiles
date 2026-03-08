@@ -1,0 +1,54 @@
+{
+  "logo": {
+    "type": "builtin",
+    "source": "auto",
+
+    "width": 12,
+
+    "padding": {
+      "top": 1,
+      "left": 1,
+    },
+
+    "color": {
+      "1": "#98971a",
+      "2": "#d79921",
+      "3": "#cc241d",
+      "4": "#458588",
+    },
+  },
+
+  "modules": [
+    {
+      "type": "title",
+      "color": {
+        "user": "#d79921",
+        "at": "#ebdbb2",
+        "host": "#98971a",
+      },
+    },
+
+    { "type": "os", "key": " OS", "keyColor": "#cc241d" },
+    { "type": "kernel", "key": " Kernel", "keyColor": "#d65d0e" },
+    { "type": "uptime", "key": "󰅐 Uptime", "keyColor": "#d79921" },
+    { "type": "packages", "key": "󰏖 Pkgs", "keyColor": "#98971a" },
+    { "type": "shell", "key": " Shell", "keyColor": "#689d6a" },
+    { "type": "terminal", "key": " Term", "keyColor": "#458588" },
+    {
+      "type": "cpu",
+      "key": " CPU",
+      "keyColor": "#d65d0e",
+      "bar": { "width": 12 },
+    },
+    { "type": "gpu", "keyColor": "#cc241d" },
+
+    {
+      "type": "memory",
+      "key": "󰍛 RAM",
+      "keyColor": "#98971a",
+      "bar": { "width": 12 },
+    },
+
+    { "type": "colors", "symbol": "●" },
+  ],
+}
