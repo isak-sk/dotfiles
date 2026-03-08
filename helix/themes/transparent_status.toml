@@ -3,7 +3,3 @@ inherits = "seoul256-dark-hard"
 
 "ui.statusline" = { bg = "none" }
 "ui.statusline.inactive" = { bg = "none"}
-
-
-
-
