@@ -10,7 +10,7 @@ Tokei				Instantly counts how many lines of code are in a folder.
 Just / Mask			Modern replacements for "Makefiles"—scripts to automate project tasks.
 Fselect				Find files using SQL-like syntax (e.g., SELECT name FROM . WHERE size > 1gb).
 Wiki-tui			Read Wikipedia inside your terminal.
-Ncspot				A Spotify client for people who hate leaving the terminal.
+Spotify-player			A Spotify client for people who hate leaving the terminal.
 Kondo				Cleans up "bloat" (like node_modules or target folders) from old projects.
 Mprocs				Run multiple commands at once in a split-view window.
 Presenterm			Create and show slideshow presentations entirely in the terminal.
