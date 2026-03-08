@@ -3,15 +3,26 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Tool Initializations
 eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+
 eval "$(zoxide init zsh)"
 
 # skip mise init until you actually need to manage Python versions
 
-# Aliases
-alias ls='eza -l --icons --group-directories-first'
-alias ll='eza -lh --icons --grid'
-alias lt='eza --tree --level=2 --icons'
-alias cat='bat'
+# Eza Aliases
+alias ls='eza -l --group-directories-first' #normal ls
+alias ll='eza -lh --grid' #list grid
+alias lt='eza --tree --level=2' # tree
+alias lf='eza -lf --icons' # ONLY FILES
+alias ld='eza -lD --icons' # Only dirs
+alias la='eza -l --all --all' # all content with hidden (show .. and . with double --all)
+
+
+
+# normal stuff
+#alias cat='bat'
+
 alias grep='rg'
 alias find='fd'
 alias cd='z'
@@ -28,3 +39,10 @@ zi() {
   local dir
   dir=$(zoxide query -l | fzf) && z "$dir"
 }
+    
+
+# Wiki-tui
+alias wiki='wiki-tui'
+
+
+
