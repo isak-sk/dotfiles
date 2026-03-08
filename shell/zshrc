@@ -8,7 +8,7 @@ eval "$(zoxide init zsh)"
 # skip mise init until you actually need to manage Python versions
 
 # Aliases
-alias ls='eza --icons --group-directories-first'
+alias ls='eza -l --icons --group-directories-first'
 alias ll='eza -lh --icons --grid'
 alias lt='eza --tree --level=2 --icons'
 alias cat='bat'
@@ -22,3 +22,9 @@ alias x='exit'
 # Quality of Life
 setopt AUTO_CD                # Just type a folder name to go there
 setopt HIST_IGNORE_ALL_DUPS   # Clean history
+
+# "zi" enables fuzzy finding directories
+zi() {
+  local dir
+  dir=$(zoxide query -l | fzf) && z "$dir"
+}

@@ -1,0 +1,8 @@
+sudo dnf install -y bat           # Modern cat
+sudo dnf install -y ripgrep       # Modern grep
+sudo dnf install -y fd-find       # Modern find
+sudo dnf install -y zoxide        # Modern cd
+sudo dnf install -y fzf           # Fuzzy finder (makes zoxide/others better)
+
+cargo install starship
+cargo install eza
