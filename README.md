@@ -13,4 +13,4 @@ I have many different themes, but prefer gruvbox dark. So these are my dotfiles 
 sudo dnf install fastfetch
 ```
 
-[FASTFETCH](fastfetch/fastfetch_gruvbox.png)
+![FASTFETCH](fastfetch/fastfetch_gruvbox.png)
