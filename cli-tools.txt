@@ -1,0 +1,16 @@
+Tool				One-Sentence Description
+Yazi				A terminal file manager (like Finder/Explorer but in the terminal).
+Xh				A friendly, colorized tool for testing APIs (better than curl).
+Gitui / Delta			Tools to make Git logs and diffs look beautiful and easier to read.
+Dua / Dust			Visual tools to see exactly what is taking up space on your hard drive.
+Espanso				A system-wide text expander (type :email and it inserts your full address).
+Hyperfine			A benchmarking tool to see exactly how fast a command or script runs.
+Bacon / Cargo-info		Essential if coding in Rust.
+Tokei				Instantly counts how many lines of code are in a folder.
+Just / Mask			Modern replacements for "Makefiles"—scripts to automate project tasks.
+Fselect				Find files using SQL-like syntax (e.g., SELECT name FROM . WHERE size > 1gb).
+Wiki-tui			Read Wikipedia inside your terminal.
+Ncspot				A Spotify client for people who hate leaving the terminal.
+Kondo				Cleans up "bloat" (like node_modules or target folders) from old projects.
+Mprocs				Run multiple commands at once in a split-view window.
+Presenterm			Create and show slideshow presentations entirely in the terminal.
