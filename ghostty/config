@@ -48,5 +48,18 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-
+# General theme
 theme = Gruvbox Material
+
+background-opacity = 0.92
+
+#Font
+font-family = "Adwaita Mono"
+
+
+
+# Keybinds
+keybind = ctrl+d=new_split:right
+
+
+
