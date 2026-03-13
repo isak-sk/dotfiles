@@ -1,0 +1,109 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+  . /etc/bashrc
+fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+  PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+  for rc in ~/.bashrc.d/*; do
+    if [ -f "$rc" ]; then
+      . "$rc"
+    fi
+  done
+fi
+unset rc
+
+# Starship
+#
+eval "$(starship init bash)"
+
+# Zoxide
+eval "$(zoxide init bash)"
+
+# Navigation with zoxide
+alias ..="z .."
+alias ...="z ../.."
+alias ....="z ../../.."
+alias ~="z ~"
+alias home="z ~"
+alias cd..="z .."
+alias cd="z"
+
+zi() {
+  local dir
+  dir=$(zoxide query -l | fzf) && z "$dir"
+}
+
+# Directory Listings with eza
+alias ls='eza -l --group-directories-first' #normal ls
+alias ll='eza -lh --grid'                   #list grid
+alias lt='eza --tree --level=2'             # tree
+alias lf='eza -lf --icons'                  # ONLY FILES
+alias ld='eza -lD --icons'                  # Only dirs
+alias la='eza -l --all --all'               # all content with hidden (show .. and . with double --all)
+alias l='eza'
+
+# File Operations
+alias cp="cp -i"
+alias mv="mv -i"
+alias rm="rm -i"
+alias mkdir="mkdir -pv"
+alias rmdir="rmdir -p"
+
+# Searching
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
+
+# System Information
+alias df="df -h"
+alias du="du -h --max-depth=1"
+alias free="free -h"
+alias top="htop"
+alias ps="ps auxf"
+
+# Networking
+alias ip="ip -c"
+alias ifconfig="ifconfig -a"
+alias netstat="netstat -tulnp"
+
+# Git Shortcuts
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gco="git checkout"
+alias gb="git branch"
+alias gl="git log"
+alias gd="git diff"
+alias gpo="git push origin"
+alias gpl="git pull origin"
+
+# Docker Shortcuts
+alias dps="docker ps"
+alias dpsa="docker ps -a"
+alias dstop="docker stop"
+alias drm="docker rm"
+alias drun="docker run"
+alias dbuild="docker build"
+alias dexec="docker exec -it"
+
+# exit
+alias x="exit"
+
+# clear
+alias cl="clear"
+
+. "$HOME/.cargo/env"
+
+#
