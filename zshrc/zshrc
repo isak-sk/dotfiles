@@ -1,5 +1,13 @@
-# Path
+# Paths
+#
+# Rust
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Golang
+export PATH=$PATH:/usr/local/go/bin
+
+# Poetry
+export PATH="$HOME/.local/bin:$PATH"
 
 # Tool Initializations
 eval "$(starship init zsh)"
@@ -12,6 +20,7 @@ eval "$(zoxide init zsh)"
 
 # Eza Aliases
 alias ls='eza -l --group-directories-first' #normal ls
+alias l='eza'
 alias ll='eza -lh --grid' #list grid
 alias lt='eza --tree --level=2' # tree
 alias lf='eza -lf --icons' # ONLY FILES
